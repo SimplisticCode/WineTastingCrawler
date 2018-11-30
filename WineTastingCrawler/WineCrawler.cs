@@ -7,11 +7,11 @@ namespace WineTastingCrawler
 {
     public class WineCrawler 
     {
-    public WineCrawler(string url)
+    public WineCrawler(string baseUrl, string url)
         {
         client = new HttpClient
             {
-            BaseAddress = new Uri("https://www.foetex.dk")
+            BaseAddress = new Uri(baseUrl)
                 };
             foetexUrl = url;
             monthsDanish = new List<string>

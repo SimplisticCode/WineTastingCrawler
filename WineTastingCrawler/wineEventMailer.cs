@@ -29,7 +29,7 @@ namespace WineTastingCrawler
             builder.Append("Vi ses til arrangementet!");
             mail.Subject = "Nyt vinarrangement";
             mail.Body = builder.ToString();
-            client.Send(mail);
+            //client.Send(mail);
         }
     }
 }
